@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07081BAB299C511400E19B0A /* PointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07081BAA299C511400E19B0A /* PointsView.swift */; };
 		0782E1AC298B28D4001AA433 /* BullseyeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0782E1AB298B28D4001AA433 /* BullseyeApp.swift */; };
 		0782E1AE298B28D4001AA433 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0782E1AD298B28D4001AA433 /* ContentView.swift */; };
 		0782E1B0298B28D5001AA433 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0782E1AF298B28D5001AA433 /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07081BAA299C511400E19B0A /* PointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsView.swift; sourceTree = "<group>"; };
 		0782E1A8298B28D4001AA433 /* Bullseye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bullseye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0782E1AB298B28D4001AA433 /* BullseyeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullseyeApp.swift; sourceTree = "<group>"; };
 		0782E1AD298B28D4001AA433 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				0782E1CC29972212001AA433 /* TextViews.swift */,
 				0782E1D0299B4BF0001AA433 /* RoundViews.swift */,
 				0782E1D2299B53A7001AA433 /* BackgroundView.swift */,
+				07081BAA299C511400E19B0A /* PointsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				0782E1CD29972212001AA433 /* TextViews.swift in Sources */,
 				0782E1D3299B53A7001AA433 /* BackgroundView.swift in Sources */,
 				0782E1BD2995DBA6001AA433 /* Game.swift in Sources */,
+				07081BAB299C511400E19B0A /* PointsView.swift in Sources */,
 				0782E1AC298B28D4001AA433 /* BullseyeApp.swift in Sources */,
 				0782E1D1299B4BF0001AA433 /* RoundViews.swift in Sources */,
 			);
