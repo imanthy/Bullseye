@@ -90,6 +90,46 @@ struct BottonText: View {
     }
 }
 
+struct ScoreText: View {
+    
+    var score: Int
+    
+    var body: some View {
+        Text(String(score))
+            .font(.title3)
+            .kerning(-0.2)
+            .bold()
+            .foregroundColor(Color("TextColor"))
+    }
+}
+
+struct DateText: View {
+    
+    var date: Date
+    
+    var body: some View {
+        Text(date, style: .time)
+            .font(.title3)
+            .kerning(-0.2)
+            .bold()
+            .foregroundColor(Color("TextColor"))
+    }
+}
+
+struct BigBoldText: View {
+    
+    var text: String
+    
+    var body: some View {
+        Text(text.uppercased())
+            .font(.title)
+            .fontWeight(.black)
+            .kerning(2)
+            .foregroundColor(Color("TextColor"))
+    }
+}
+
+
 struct TextViews_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
@@ -99,6 +139,9 @@ struct TextViews_Previews: PreviewProvider {
             LabelText(text: "lable")
             BodyText(text: "You scored 200 Points\n🎉🎉🎉")
             BottonText(text: "Start new round")
+            ScoreText(score: 459)
+            DateText(date: Date())
+            BigBoldText(text: "leaderboard")
         }
         .padding()
     }

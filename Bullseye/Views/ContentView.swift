@@ -22,12 +22,15 @@ struct ContentView: View {
                 
                 if alertIsVisible {
                     PointsView(alertIsVisible: $alertIsVisible, sliderValue: $sliderValue, game: $game)
+                        .transition(.scale)
                 } else {
                     HitMeButtonView(alertIsVisible: $alertIsVisible)
+                        .transition(.scale)
                 }
             }
             if !alertIsVisible {
                 SliderView(sliderValue: $sliderValue)
+                    .transition(.scale)
             }
         }
     }
@@ -66,7 +69,9 @@ struct HitMeButtonView: View {
     
     var body: some View {
         Button("Hit Me".uppercased()) {
-            self.alertIsVisible = true
+            withAnimation {
+                self.alertIsVisible = true
+            }
         }
         .bold()
         .font(.title3)
@@ -78,10 +83,10 @@ struct HitMeButtonView: View {
                 LinearGradient(gradient: Gradient(colors: [Color.white.opacity(0.3), Color.clear]), startPoint: .top, endPoint: .bottom)
             }
         )
-        .cornerRadius(21)
+        .cornerRadius(Constants.General.roundRectCornerRadius)
         .overlay(
-            RoundedRectangle(cornerRadius: 21.0)
-                .strokeBorder(.white, lineWidth: 2.0)
+            RoundedRectangle(cornerRadius: Constants.General.roundRectCornerRadius)
+                .strokeBorder(.white, lineWidth: Constants.General.strokeWidth)
         )
     }
 }
